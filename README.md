@@ -55,13 +55,15 @@ src/main/java/com/design/patterns/
 - Composite
 - Decorator
 - Facade
+- Flyweight
 - Proxy
 
 ### Behavioral Patterns
-- Observer
-- Strategy
+- Chain of Responsibility
 - Command
+- Observer
 - State
+- Strategy
 - Template Method
 - Visitor
 
@@ -89,6 +91,10 @@ Each pattern implementation contains a demo class (e.g., `*Demo.java`) that demo
 ### 🎯 Running Demos
 
 #### Behavioral Patterns
+- **Chain of Responsibility Pattern**:
+  ```bash
+  mvn compile exec:java -Pchain_of_responsibility
+  ```
 - **Command Pattern**:
   ```bash
   mvn compile exec:java -Pcommand
@@ -156,6 +162,10 @@ Each pattern implementation contains a demo class (e.g., `*Demo.java`) that demo
 - **Facade Pattern**:
   ```bash
   mvn compile exec:java -Pfacade
+  ```
+- **Flyweight Pattern**:
+  ```bash
+  mvn compile exec:java -Pflyweight
   ```
 - **Proxy Pattern**:
   ```bash
