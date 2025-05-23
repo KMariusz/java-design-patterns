@@ -165,6 +165,7 @@ Each pattern implementation contains a demo class (e.g., `*Demo.java`) that demo
 ## 📚 Pattern Descriptions
 
 ### 🧠 Behavioral Patterns
+- **Chain of Responsibility**: Passes the request along a chain of handlers, where each handler can either process the request or pass it to the next handler in the chain.
 - **Command**: Encapsulates a request as an object, allowing for parameterization of clients with different requests, queuing of requests, and logging of the requests.
 - **Observer**: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 - **State**: Allows an object to alter its behavior when its internal state changes, appearing to change its class.
@@ -172,19 +173,20 @@ Each pattern implementation contains a demo class (e.g., `*Demo.java`) that demo
 - **Template Method**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses, allowing subclasses to redefine certain steps of an algorithm without changing the algorithm's structure.
 - **Visitor**: Represents an operation to be performed on elements of an object structure, allowing you to define a new operation without changing the classes of the elements on which it operates.
 
-### Creational Patterns
+### 🏗 Creational Patterns
 - **Abstract Factory**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 - **Builder**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
 - **Factory Method**: Defines an interface for creating an object but lets subclasses decide which class to instantiate, allowing a class to defer instantiation to subclasses.
 - **Prototype**: Specifies the kinds of objects to create using a prototypical instance and creates new objects by copying this prototype.
 - **Singleton**: Ensures a class has only one instance and provides a global point of access to it.
 
-### Structural Patterns
+### 🏛️ Structural Patterns
 - **Adapter**: Converts the interface of a class into another interface that clients expect, allowing classes to work together that couldn't otherwise because of incompatible interfaces.
 - **Bridge**: Decouples an abstraction from its implementation so that the two can vary independently.
 - **Composite**: Composes objects into tree structures to represent part-whole hierarchies, allowing clients to treat individual objects and compositions of objects uniformly.
 - **Decorator**: Attaches additional responsibilities to an object dynamically, providing a flexible alternative to subclassing for extending functionality.
 - **Facade**: Provides a unified interface to a set of interfaces in a subsystem, defining a higher-level interface that makes the subsystem easier to use.
+- **Flyweight**: Minimizes memory usage or computational expenses by sharing as much as possible with similar objects.
 - **Proxy**: Provides a surrogate or placeholder for another object to control access to it.
 
 ## 💻 Requirements
