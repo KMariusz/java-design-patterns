@@ -1,10 +1,7 @@
 # Compiled class file
 *.class
 
-# Log file
-*.log
-
-# Package Files
+# Package files
 *.jar
 *.war
 *.nar
@@ -13,12 +10,38 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 # Maven
 target/
+dependency-reduced-pom.xml
+maven-archiver/pom.properties
+maven-status/
 
+# Build tools
+build/
+
+# Logs
+logs/
+*.log
+
+# Test reports
+target/surefire-reports/
+target/failsafe-reports/
+**/test-output/
+**/test-results/
+
+# Dependency directories (should be managed by Maven)
+**/lib/
+**/libs/
+
+# Local development files
+*.swp
+*.swo
+*~
+
+# ========== IDE ==========
 # IntelliJ IDEA
 .idea/
 *.iml
@@ -29,39 +52,25 @@ target/
 .settings/
 .project
 .classpath
+.factorypath
+.springBeans
+.sts4-cache/
 
 # VS Code
 .vscode/
 
+# ========== OS ==========
 # Mac OS
 .DS_Store
 
 # Windows
 Thumbs.db
 
-# Build directory
-build/
+# ========== Environment ==========
+# Environment files
+.env
+*.env
 
-# Maven wrapper
-.mvn/
-
-# Local configuration files
-*.properties
-*.xml
-
-# Logs
-logs/
-*.log
-
-# Unit test reports
-**/test-output/
-**/test-results/
-
-# Dependency directories
-**/lib/
-**/libs/
-
-# Local development files
-*.swp
-*.swo
-*~
+# Local configuration files (be careful with this as some configs should be versioned)
+# *.properties
+# *.xml

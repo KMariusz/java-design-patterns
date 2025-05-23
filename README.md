@@ -86,32 +86,65 @@ src/main/java/com/design/patterns/
 
 ## 🏃 How to Run
 
-Each pattern implementation contains a demo class (e.g., `*Demo.java`) that demonstrates the pattern in action. You can run these demos using Maven with the following commands:
+Each pattern implementation contains a demo class (e.g., `*Demo.java`) that demonstrates the pattern in action. You can run these demos using either Maven profiles or directly with Java.
+
+### Prerequisites
+- Java JDK 17 or higher
+- Maven 3.6.0 or higher (if using Maven)
 
 ### 🎯 Running Demos
 
+#### Method 1: Using Maven (Recommended)
+```bash
+mvn compile exec:java -P[pattern_name]
+```
+
+#### Method 2: Using Java Directly
+1. Navigate to the project root directory
+2. Compile the Java files:
+   ```bash
+   javac com/design/patterns/[category]/[pattern_name]/*.java
+   ```
+3. Run the demo class:
+   ```bash
+   java com.design.patterns.[category].[pattern_name].[PatternName]Demo
+   ```
+
+### Available Patterns
+
 #### Behavioral Patterns
-- **Chain of Responsibility Pattern**:
-  ```bash
-  mvn compile exec:java -Pchain_of_responsibility
-  ```
-- **Command Pattern**:
-  ```bash
-  mvn compile exec:java -Pcommand
-  ```
-- **Observer Pattern**:
-  ```bash
-  mvn compile exec:java -Pobserver
-  ```
-- **State Pattern**:
-  ```bash
-  mvn compile exec:java -Pstate
-  ```
-- **Strategy Pattern**:
-  ```bash
-  mvn compile exec:java -Pstrategy
-  ```
-- **Template Method Pattern**:
+- **Chain of Responsibility Pattern**: `mvn compile exec:java -Pchain_of_responsibility`
+- **Command Pattern**: `mvn compile exec:java -Pcommand`
+- **Observer Pattern**: `mvn compile exec:java -Pobserver`
+- **State Pattern**: `mvn compile exec:java -Pstate`
+- **Strategy Pattern**: `mvn compile exec:java -Pstrategy`
+- **Template Method Pattern**: `mvn compile exec:java -Ptemplate_method`
+- **Visitor Pattern**: `mvn compile exec:java -Pvisitor`
+
+#### Creational Patterns
+- **Abstract Factory Pattern**: `mvn compile exec:java -Pabstract_factory`
+- **Builder Pattern**: `mvn compile exec:java -Pbuilder`
+- **Factory Method Pattern**: `mvn compile exec:java -Pfactory`
+- **Prototype Pattern**: `mvn compile exec:java -Pprototype`
+- **Singleton Pattern**: `mvn compile exec:java -Psingleton`
+
+#### Structural Patterns
+- **Adapter Pattern**: `mvn compile exec:java -Padapter`
+- **Bridge Pattern**: `mvn compile exec:java -Pbridge`
+- **Composite Pattern**: `mvn compile exec:java -Pcomposite`
+- **Decorator Pattern**: `mvn compile exec:java -Pdecorator`
+- **Facade Pattern**: `mvn compile exec:java -Pfacade`
+- **Flyweight Pattern**: `mvn compile exec:java -Pflyweight`
+- **Proxy Pattern**: `mvn compile exec:java -Pproxy`
+
+### Expected Outputs
+Each demo will output information about the pattern being demonstrated, including:
+- The problem being solved
+- The pattern implementation
+- The results of applying the pattern
+- Any relevant state changes or interactions
+
+For detailed information about each pattern and its expected output, please refer to the individual pattern's README file in its respective directory.
   ```bash
   mvn compile exec:java -Ptemplate_method
   ```
